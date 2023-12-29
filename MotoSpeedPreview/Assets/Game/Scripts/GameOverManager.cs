@@ -19,7 +19,7 @@ public class GameOverManager : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Road")
+        if (other.CompareTag("Road"))
         {
             StartCoroutine(ShowPanel());
             Zoom();
